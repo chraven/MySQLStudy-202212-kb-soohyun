@@ -171,7 +171,6 @@ CREATE TABLE IF NOT EXISTS `user_dtl` (
 DELETE FROM `user_dtl`;
 INSERT INTO `user_dtl` (`id`, `phone`, `address`, `create_date`, `update_date`) VALUES
 	(1, NULL, NULL, '2022-12-09 10:44:29', '2022-12-09 10:44:29'),
-	(2, NULL, NULL, '2022-12-09 10:44:29', '2022-12-09 10:44:29'),
 	(3, NULL, NULL, '2022-12-09 10:44:29', '2022-12-09 10:44:29'),
 	(4, NULL, NULL, '2022-12-09 10:44:29', '2022-12-09 10:44:29');
 
