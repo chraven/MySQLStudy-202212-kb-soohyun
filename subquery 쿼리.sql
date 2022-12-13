@@ -17,7 +17,7 @@ VALUES
 
 SELECT
 	*,
-	(SELECT COUNT(1) FROM bpard_mst bm2 WHERE bm2.wrtier_id = bm.writer_id) AS writer_count
+	(SELECT COUNT(1) FROM board_mst bm2 WHERE bm2.writer_id = bm.writer_id) AS writer_count
 FROM 
 	board_mst bm;
 /*같은 테이블 내에서 다른 값을 내기 위해서 별칭을 따로 줌.각 행마다 border_mst(bm2)에서writer_id가 같은 놈을 찾아 돌며 count한다.*/
@@ -44,8 +44,4 @@ FROM
 SET profiling = 1;/*얘를 실행하고 쿼리 위에꺼 실행하고 아래 프로파일 실행 순*/
 SHOW PROFILES;/*실행에 걸린 시간을 보여주는 코드*/
 
-INSERT INTO
-	user_mst
-VALUE
-	
 
